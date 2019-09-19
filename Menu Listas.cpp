@@ -12,8 +12,29 @@ struct Nodo{
 	}
 };
 Nodo D1(13), D2(7), D3(11), D4(15), D5(2);
+void agregar(struct Nodo*, int);
 
 int main(int argc, char** argv) {
+	int opcion;
+	cout<<"MENU"<<endl;
+	cout<<"1. Llenar Nodos"<<endl;
+	cout<<"2. Mostar Datos de Nodos"<<endl;
+	cout<<"3. Salir"<<endl;
+	cin>>opcion;
+	switch (opcion){
+        case 1:
+        	cout<<"Llenado de Nodos";
+        	agregar(inicioLista, valor)
+		break;
+        case 2:
+            cout<<"Mostra los datos de Nodos ";
+            break;
+        case 3:
+        	cout<<"Salir";
+        default:
+            cout<<"Gracias"<<endl;
+            break;
+    }
 	struct Nodo *inicio;
 	struct Nodo *aux;
 	inicio=NULL;
@@ -94,5 +115,11 @@ int main(int argc, char** argv) {
 	cout<<(inicio->ptr)->ptr->ptr->ptr->valor<<endl;
 	
 	 return 0;
+}
+void agregar(struct Nodo* inicioLista, int valor)
+{
+	struct Nodo *auxiliar;
+	auxiliar=inicioLista;
+	auxiliar++;
 }
 
