@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
 	
 	 return 0;
 }
-void agregar( int add)
+void agregar(int add)
 {
 	Nodo *nuevo= new Nodo;
 	nuevo->ptr=NULL;
@@ -51,12 +51,13 @@ void agregar( int add)
 	if(lista==NULL)lista=nuevo;
 	else{
 		Nodo *aux=lista;
-		while(aux->ptr=NULL){
+		while(aux->ptr!=NULL){
 			aux=aux->ptr;
 		}
-		lista->ptr=nuevo;
+		aux->ptr=nuevo;
+		//lista->ptr=nuevo;
 	}
-	cout<<lista->valor<<" "<<endl;
+	//cout<<lista->valor<<" "<<endl;
 }
 void mostrar(){
 	Nodo *aux=lista;
